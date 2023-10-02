@@ -1,7 +1,4 @@
-# import sys
-# sys.path.append("/home/user/Desktop/github/temp/src")
-
-from mymodule import arithmetic as arithmetic
+from mymodule import arithmetic
 
 
 def test_add_correct():
