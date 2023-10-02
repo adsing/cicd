@@ -1,3 +1,4 @@
+# pylint: disable=C0103
 def add(x: float, y: float) -> float:
     return x + y
 
