@@ -10,8 +10,8 @@ def test_add_fail() -> None:
         assert arithmetic.add(2, 3) == 6
     except AssertionError:
         pass
-    except:
-        raise RuntimeError("Did not raise AssertionError as expected")
+    except Exception as exc:
+        raise RuntimeError("Did not raise AssertionError as expected") from exc
 
 
 def main():
