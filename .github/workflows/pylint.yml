@@ -1,8 +1,15 @@
 name: Pylint
 
 on:
-  push:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+      - closed
     branches-ignore: [$default-branch]
+#  push:
+#    branches-ignore: [$default-branch]
 
 jobs:
   build:
